@@ -25,16 +25,16 @@ $(document).ready(function() {
      * @return {NaN}
      */
     $(".userHands").click(function() {
-        if ($(this).attr("src") == "../../images/pascst/st.jpg") {
-            $(this).attr("src", "../../images/pascst/pa.jpg");
+        if ($(this).attr("src") == "../img/pascst-st.jpg") {
+            $(this).attr("src", "../img/pascst-pa.jpg");
         } else {
-            $(this).attr("src", "../../images/pascst/st.jpg");
+            $(this).attr("src", "../img/pascst-st.jpg");
         };
     })
 
     $("#submitBtn").click(function() {
-        $("#cpuLeftHand").attr("src", "../../images/pascst/st.jpg");
-        $("#cpuRightHand").attr("src", "../../images/pascst/st.jpg");
+        $("#cpuLeftHand").attr("src", "../img/pascst-st.jpg");
+        $("#cpuRightHand").attr("src", "../img/pascst-st.jpg");
         if (whoTurn == "user") {
             cpuTotal = 0;
             userTotal = 0;
@@ -44,18 +44,18 @@ $(document).ready(function() {
             if (cpuLeft == 2) {
                 console.log('');
                 cpuTotal += 5;
-                $("#cpuLeftHand").attr("src", "../../images/pascst/pa.jpg");
+                $("#cpuLeftHand").attr("src", "../img/pascst-pa.jpg");
             };
             if (cpuRight == 2) {
                 console.log('');
                 cpuTotal += 5;
-                $("#cpuRightHand").attr("src", "../../images/pascst/pa.jpg");
+                $("#cpuRightHand").attr("src", "../img/pascst-pa.jpg");
             };
 
-            if ($("#userLeftHand").attr("src") == "../../images/pascst/pa.jpg") {
+            if ($("#userLeftHand").attr("src") == "../img/pascst-pa.jpg") {
                 userTotal += 5;
             };
-            if ($("#userRightHand").attr("src") == "../../images/pascst/pa.jpg") {
+            if ($("#userRightHand").attr("src") == "../img/pascst-pa.jpg") {
                 userTotal += 5;
             };
             if ($("#zero").is(':checked')) {
@@ -112,20 +112,20 @@ $(document).ready(function() {
             if (cpuAsk == 0) {
                 cpuTotal = 0;
                 console.log("");
-                $("#cpuLeftHand").attr("src", "../../images/pascst/st.jpg");
-                $("#cpuRightHand").attr("src", "../../images/pascst/st.jpg");
+                $("#cpuLeftHand").attr("src", "../img/pascst-st.jpg");
+                $("#cpuRightHand").attr("src", "../img/pascst-st.jpg");
             } else if (cpuAsk == 5) {
                 ran = Math.floor(Math.random() * 2 + 1);
                 if (ran == 1) {
                     console.log("");
                     cpuTotal = 0;
-                    $("#cpuLeftHand").attr("src", "../../images/pascst/st.jpg");
-                    $("#cpuRightHand").attr("src", "../../images/pascst/st.jpg");
+                    $("#cpuLeftHand").attr("src", "../img/pascst-st.jpg");
+                    $("#cpuRightHand").attr("src", "../img/pascst-st.jpg");
                 } else {
                     console.log("");
                     cpuTotal = 5;
-                    $("#cpuLeftHand").attr("src", "../../images/pascst/pa.jpg");
-                    $("#cpuRightHand").attr("src", "../../images/pascst/st.jpg");
+                    $("#cpuLeftHand").attr("src", "../img/pascst-pa.jpg");
+                    $("#cpuRightHand").attr("src", "../img/pascst-st.jpg");
                 };
             } else if (cpuAsk == 10) {
                 ran = Math.floor(Math.random() * 3 + 1);
@@ -133,43 +133,43 @@ $(document).ready(function() {
                 if (ran == 1) {
                     console.log("");
                     cpuTotal = 0;
-                    $("#cpuLeftHand").attr("src", "../../images/pascst/st.jpg");
-                    $("#cpuRightHand").attr("src", "../../images/pascst/st.jpg");
+                    $("#cpuLeftHand").attr("src", "../img/pascst-st.jpg");
+                    $("#cpuRightHand").attr("src", "../img/pascst-st.jpg");
                 } else if (ran == 2) {
                     console.log("");
                     cpuTotal = 5;
-                    $("#cpuLeftHand").attr("src", "../../images/pascst/pa.jpg");
-                    $("#cpuRightHand").attr("src", "../../images/pascst/st.jpg");
+                    $("#cpuLeftHand").attr("src", "../img/pascst-pa.jpg");
+                    $("#cpuRightHand").attr("src", "../img/pascst-st.jpg");
                 } else {
                     console.log("");
                     cpuTotal = 10;
-                    $("#cpuLeftHand").attr("src", "../../images/pascst/pa.jpg");
-                    $("#cpuRightHand").attr("src", "../../images/pascst/pa.jpg");
+                    $("#cpuLeftHand").attr("src", "../img/pascst-pa.jpg");
+                    $("#cpuRightHand").attr("src", "../img/pascst-pa.jpg");
                 };
             } else if (cpuAsk == 15) {
                 ran = Math.floor(Math.random() * 2 + 1);
                 if (ran == 1) {
                     console.log("");
                     cpuTotal = 5;
-                    $("#cpuLeftHand").attr("src", "../../images/pascst/pa.jpg");
-                    $("#cpuRightHand").attr("src", "../../images/pascst/st.jpg");
+                    $("#cpuLeftHand").attr("src", "../img/pascst-pa.jpg");
+                    $("#cpuRightHand").attr("src", "../img/pascst-st.jpg");
                 } else {
                     console.log("");
                     cpuTotal = 10;
-                    $("#cpuLeftHand").attr("src", "../../images/pascst/pa.jpg");
-                    $("#cpuRightHand").attr("src", "../../images/pascst/pa.jpg");
+                    $("#cpuLeftHand").attr("src", "../img/pascst-pa.jpg");
+                    $("#cpuRightHand").attr("src", "../img/pascst-pa.jpg");
                 };
             } else {
                 console.log("");
                 cpuTotal = 10;
-                $("#cpuLeftHand").attr("src", "../../images/pascst/pa.jpg");
-                $("#cpuRightHand").attr("src", "../../images/pascst/pa.jpg");
+                $("#cpuLeftHand").attr("src", "../img/pascst-pa.jpg");
+                $("#cpuRightHand").attr("src", "../img/pascst-pa.jpg");
             };
 
-            if ($("#userLeftHand").attr("src") == "../../images/pascst/pa.jpg") {
+            if ($("#userLeftHand").attr("src") == "../img/pascst-pa.jpg") {
                 userTotal += 5;
             };
-            if ($("#userRightHand").attr("src") == "../../images/pascst/pa.jpg") {
+            if ($("#userRightHand").attr("src") == "../img/pascst-pa.jpg") {
                 userTotal += 5;
             };
 

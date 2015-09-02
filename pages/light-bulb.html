@@ -17,12 +17,11 @@
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
     <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.purple-yellow.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script type="text/javascript" src="light-bulb.js"></script>
+    <script type="text/javascript" src="../js/light-bulb.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../../images/chugorLogo.png" rel="icon" type="image/png" />
-    <link rel="stylesheet" type="text/css" href="../../index.css">
-    <link rel="stylesheet" type="text/css" href="FifteenTwenty.css">
-    <title>Lab | Fifteen Twenty Game</title>
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <title>Lab | Light Bulb</title>
 </head>
 
 <body>
@@ -31,18 +30,18 @@
         <header class="mdl-layout__header">
             <div class="mdl-layout__header-row">
                 <!--Page Title-->
-                <span class="mdl-layout-title">Lab | Fifteen Twenty Game</span>
+                <span class="mdl-layout-title">Lab | Light Bulb</span>
                 <!--Space to right-->
                 <div class="mdl-layout-spacer"></div>
                 <!--Links (at right)-->
                 <nav class="mdl-navigation mdl-layout--large-screen-only">
-                    <a class="mdl-navigation__link" href="../../index.html">
+                    <a class="mdl-navigation__link" href="../index.html">
                         <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                             <path fill="#FAFAFA" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" />
                         </svg>
                         <strong>Home</strong>
                     </a>
-                    <a class="mdl-navigation__link" href="../lab.html">
+                    <a class="mdl-navigation__link" href="lab.html">
                         <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                             <path fill="#FAFAFA" d="M5,19A1,1 0 0,0 6,20H18A1,1 0 0,0 19,19C19,18.79 18.93,18.59 18.82,18.43L13,8.35V4H11V8.35L5.18,18.43C5.07,18.59 5,18.79 5,19M6,22A3,3 0 0,1 3,19C3,18.4 3.18,17.84 3.5,17.37L9,7.81V6A1,1 0 0,1 8,5V4A2,2 0 0,1 10,2H14A2,2 0 0,1 16,4V5A1,1 0 0,1 15,6V7.81L20.5,17.37C20.82,17.84 21,18.4 21,19A3,3 0 0,1 18,22H6M13,16L14.34,14.66L16.27,18H7.73L10.39,13.39L13,16M12.5,12A0.5,0.5 0 0,1 13,12.5A0.5,0.5 0 0,1 12.5,13A0.5,0.5 0 0,1 12,12.5A0.5,0.5 0 0,1 12.5,12Z" />
                         </svg>
@@ -59,15 +58,15 @@
         </header>
         <!--Menu (drawer)-->
         <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title">Lab | 1520</span>
+            <span class="mdl-layout-title">Lab | Light Bulb</span>
             <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" href="../../index.html">
+                <a class="mdl-navigation__link" href="../index.html">
                     <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                         <path fill="#424242" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" />
                     </svg>
                     <strong>Home</strong>
                 </a>
-                <a class="mdl-navigation__link" href="../lab.html">
+                <a class="mdl-navigation__link" href="lab.html">
                     <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                         <path fill="#424242" d="M5,19A1,1 0 0,0 6,20H18A1,1 0 0,0 19,19C19,18.79 18.93,18.59 18.82,18.43L13,8.35V4H11V8.35L5.18,18.43C5.07,18.59 5,18.79 5,19M6,22A3,3 0 0,1 3,19C3,18.4 3.18,17.84 3.5,17.37L9,7.81V6A1,1 0 0,1 8,5V4A2,2 0 0,1 10,2H14A2,2 0 0,1 16,4V5A1,1 0 0,1 15,6V7.81L20.5,17.37C20.82,17.84 21,18.4 21,19A3,3 0 0,1 18,22H6M13,16L14.34,14.66L16.27,18H7.73L10.39,13.39L13,16M12.5,12A0.5,0.5 0 0,1 13,12.5A0.5,0.5 0 0,1 12.5,13A0.5,0.5 0 0,1 12,12.5A0.5,0.5 0 0,1 12.5,12Z" />
                     </svg>
@@ -85,56 +84,14 @@
         <!--Contents Begin-->
         <main class="mdl-layout__content">
             <div class="page-content">
-                <pre><h1>   Fifteen Twenty Game</h1></pre>
-                <div align="middle" class="mainGame">
-                    <p id="turnTable" style="font-size: 150%;">-----</p>
-                    <br>
-                    <p style="font-size: 150%;">CPU's Hands</p>
-                    <img src="../../images/pascst/st.jpg" height="100" width="100" id="cpuLeftHand" class="cpuHands">
-                    <img src="../../images/pascst/st.jpg" height="100" width="100" id="cpuRightHand" class="cpuHands">
-                    <br>
-                    <br>
-                    <p style="font-size: 150%;">User's Hands</p>
-                    <img src="../../images/pascst/st.jpg" height="100" width="100" id="userLeftHand" class="userHands">
-                    <img src="../../images/pascst/st.jpg" height="100" width="100" id="userRightHand" class="userHands">
-                    <br>
-                    <p id="askPara">-----</p>
-                    <br>
-                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="submitBtn">
-                        Submit
-                    </button>
-                    <form role="form">
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="optradio" id="zero" class="rdBtn" checked="checked">&nbsp 0</label>
-                        </div>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="optradio" id="five" class="rdBtn">&nbsp 5</label>
-                        </div>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="optradio" id="ten" class="rdBtn">10</label>
-                        </div>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="optradio" id="fifteen" class="rdBtn">15</label>
-                        </div>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="optradio" id="twenty" class="rdBtn">20</label>
-                        </div>
-                    </form>
+                <pre><h1>   Light Bulb</h1></pre>
+                <div align="middle">
+                    <img id="lightBulb" src="../img/Light-Bulb-Off.jpg" height="300" width="220">
                 </div>
-                <pre>
-How To: Use those radio button to ask what you want.
-        Click your 'hands' to change the fingers number.
-        Click 'Submit' to submit (pretty silly XD).
-                </pre>
+                <pre>How To: Try to click the light bulb to turn it on and off.</pre>
             </div>
         </main>
         <!--Contents End-->
-        <script type="text/javascript" src="FifteenTwenty.js"></script>
 </body>
 
 </html>

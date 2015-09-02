@@ -5,17 +5,17 @@ var lose = 0;
 
 $(document).ready(function() {
     $("#paBtn").click(function() {
-        $("#userImage").attr("src", "../../images/pascst/pa.jpg");
+        $("#userImage").attr("src", "../img/pascst-pa.jpg");
         check();
     });
 
     $("#scBtn").click(function() {
-        $("#userImage").attr("src", "../../images/pascst/sc.jpg");
+        $("#userImage").attr("src", "../img/pascst-sc.jpg");
         check();
     });
 
     $("#stBtn").click(function() {
-        $("#userImage").attr("src", "../../images/pascst/st.jpg");
+        $("#userImage").attr("src", "../img/pascst-st.jpg");
         check();
     });
 })
@@ -25,20 +25,20 @@ function check() {
 
     cpuOption = math.floor(math.random() * 3 + 1);
     if (cpuOption == 1) {
-        $("#cpuImage").attr("src", "../../images/pascst/pa.jpg");
+        $("#cpuImage").attr("src", "../img/pascst-pa.jpg");
     } else if (cpuOption == 2) {
-        $("#cpuImage").attr("src", "../../images/pascst/sc.jpg");
+        $("#cpuImage").attr("src", "../img/pascst-sc.jpg");
     } else {
-        $("#cpuImage").attr("src", "../../images/pascst/st.jpg");
+        $("#cpuImage").attr("src", "../img/pascst-st.jpg");
     }
 
     if ($("#userImage").attr("src") == $("#cpuImage").attr("src")) {
         pass();
-    } else if (($("#userImage").attr("src") == "../../images/pascst/pa.jpg") && (cpuOption == 3)) {
+    } else if (($("#userImage").attr("src") == "../img/pascst-pa.jpg") && (cpuOption == 3)) {
         win += 1;
-    } else if (($("#userImage").attr("src") == "../../images/pascst/sc.jpg") && (cpuOption == 1)) {
+    } else if (($("#userImage").attr("src") == "../img/pascst-sc.jpg") && (cpuOption == 1)) {
         win += 1;
-    } else if (($("#userImage").attr("src") == "../../images/pascst/st.jpg") && (cpuOption == 2)) {
+    } else if (($("#userImage").attr("src") == "../img/pascst-st.jpg") && (cpuOption == 2)) {
         win += 1;
     } else {
         lose += 1;
